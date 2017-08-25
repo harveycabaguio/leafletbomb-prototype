@@ -1,0 +1,22 @@
+<header class="content-toolbar">
+  <div class="left">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="right">
+    {% if page.title == "Drafts" %}
+      <div class="multiple-items -disabled">
+        {% include inputs/button.html url="#" icon="calendar-o" label="Schedule" %}
+        {% include inputs/button.html type="__danger" url="#" icon="trash-o" label="Delete" %}
+      </div>
+      {% include inputs/button.html type="__suggested" url="/new/" icon="plus" label="New Draft" %}
+    {% endif %}
+    {% if page.title == "Scheduled" %}
+      <div class="multiple-items -disabled">
+        {% include inputs/button.html url="#" icon="file-text-o" label="Unschedule" %}
+        {% include inputs/button.html type="__danger" url="#" icon="trash-o" label="Delete" %}
+      </div>
+    {% endif %}
+    {% if page.title == "Published" %}
+    {% endif %}
+  </div>
+</header>

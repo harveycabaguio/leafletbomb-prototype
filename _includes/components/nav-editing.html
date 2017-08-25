@@ -1,0 +1,17 @@
+<nav>
+  <div class="left">
+    {% include inputs/button.html url="/drafts" type="__flat" icon="arrow-left" label="Drafts" %}
+    <div class="separator"></div>
+    {% include inputs/button.html type="__flat" url="#" icon="briefcase" label="Presskit (4)" %}
+    {% include inputs/button.html type="__flat" url="#" icon="envelope-o" label="Influencers (10)" %}
+  </div>
+  <div class="right">
+    {% include components/display-picture.html file="ryan-sipes" %}
+    {% include components/display-picture.html file="benjamin-flanagin" %}
+    {% include components/display-picture.html file="harvey-cabaguio" %}
+    {% include inputs/button.html url="#" type="--icon-only" icon="comment-o" %}
+    <div class="separator"></div>
+    {% include inputs/button.html type="--icon-only" url="#" icon="calendar-o" %}
+    {% include inputs/button.html type="__suggested" url="#" icon="check" label="Publish" %}
+  </div>
+</nav>

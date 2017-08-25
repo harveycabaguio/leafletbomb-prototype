@@ -1,0 +1,6 @@
+<a class="button{{ include.type }}" href="{{ include.url }}">
+  {% if include.icon != null %}
+    <i class="fa fa-{{ include.icon }}" aria-hidden="true"></i>
+  {% endif %}
+  {{ include.label }}
+</a>

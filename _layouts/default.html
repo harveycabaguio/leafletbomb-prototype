@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% if page.editing %}
+      {% include components/nav-editing.html %}
+    {% else %}
+      {% include components/nav.html %}
+    {% endif %}
+    {{ content }}
+  </body>
+</html>

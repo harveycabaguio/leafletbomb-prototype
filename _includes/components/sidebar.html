@@ -1,0 +1,38 @@
+<aside class="sb-mng">
+  <section class="sb-mng-section">
+    <span class="sb-mng-list-item">
+      <h4>System76</h4>
+    </span>
+    {% if page.title == "Information" %}
+      {% include sb-mng-list-item.html url="#" icon="info-circle" label="Information" selected="" %}
+    {% else %}
+      {% include sb-mng-list-item.html url="#" icon="info-circle" label="Information" %}
+    {% endif %}
+    {% if page.title == "Team" %}
+      {% include sb-mng-list-item.html url="/team/" icon="users" label="Team" badge="1" selected="" %}
+    {% else %}
+      {% include sb-mng-list-item.html url="/team/" icon="users" label="Team" badge="1" %}
+    {% endif %}
+  </section>
+  <section class="sb-mng-section">
+    <span class="sb-mng-list-item">
+      <span class="left"><h4>Press Releases</h4></span>
+      {% include inputs/button.html type="__flat--icon-only" url="/new/" icon="plus" %}
+    </span>
+    {% if page.title == "Drafts" %}
+      {% include sb-mng-list-item.html url="/drafts/" icon="file-text-o" label="Drafts" badge-urgent="4" selected="" %}
+    {% else %}
+      {% include sb-mng-list-item.html url="/drafts/" icon="file-text-o" label="Drafts" badge-urgent="4" %}
+    {% endif %}
+    {% if page.title == "Scheduled" %}
+      {% include sb-mng-list-item.html url="/scheduled/" icon="calendar-o" label="Scheduled" badge-urgent="1" selected="" %}
+    {% else %}
+      {% include sb-mng-list-item.html url="/scheduled/" icon="calendar-o" label="Scheduled" badge-urgent="1" %}
+    {% endif %}
+    {% if page.title == "Published" %}
+      {% include sb-mng-list-item.html url="/published/" icon="check" label="Published" selected="" %}
+    {% else %}
+      {% include sb-mng-list-item.html url="/published/" icon="check" label="Published" %}
+    {% endif %}
+  </section>
+</aside>

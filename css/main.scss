@@ -1,0 +1,47 @@
+---
+---
+@charset "utf-8";
+
+// Our variables
+$ui-font-family: "Montserrat", Helvetica, Arial, sans-serif;
+$ui-font-size: 14px;
+$ui-font-weight: 400;
+$copy-font-family: "";
+
+$base-unit: 6px;
+$spacing-unit: ($base-unit * 2);
+
+$text300: #2F353B;
+  $text200: #3A4249;
+  $text400: #23272C;
+
+$grey300: lighten($text300, 40%);
+  $grey200: lighten($grey300, 25%);
+  $grey400: darken($grey300, 25%);
+
+$background300: #F8F9FA;
+  $background100: #FFF;
+  $background400: #E7EBF0;
+
+// $blue300: #297FA4;
+$blue300: #2175DC;
+  $blue100: #498EE2;
+  $blue200: #3581DF;
+  $blue400: #1E6BC8;
+  $blue500: #1C60B5;
+
+$green300: #1E932D;
+
+$red300: #DB2B39;
+  $red100: #E1515D;
+  $red200: #DE3E4B;
+  $red400: #C82834;
+  $red500: #B4242F;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "inputs",
+  "components"
+;

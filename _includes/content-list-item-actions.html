@@ -1,0 +1,17 @@
+<div class="list-item-actions">
+  {% if page.title == "Team" %}
+    {% if include.section == "a" %}
+      {% include inputs/button.html url="#" type="__danger" icon="sign-out" label="Leave the Team" %}
+    {% elsif include.section =="b" %}
+      {% include inputs/button.html url="#" type="__flat--icon-only" icon="times" %}
+      {% include inputs/button.html url="#" type="__suggested" icon="thumbs-o-up" label="Accept" %}
+    {% else %}
+      {% include inputs/button.html url="#" type="__danger" icon="minus-circle" label="Remove from the Team" %}
+    {% endif %}
+  {% elsif page.title == "Drafts" or page.title =="Scheduled" %}
+    {% include inputs/button.html url="#" icon="briefcase" label="View Presskit" %}
+    {% include inputs/button.html url="#" icon="pencil" label="Edit" %}
+  {% elsif page.title == "Published" %}
+    {% include inputs/button.html url="#" icon="bar-chart" label="View Analytics" %}
+  {% endif %}
+</div>

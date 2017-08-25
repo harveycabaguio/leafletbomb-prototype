@@ -1,0 +1,26 @@
+<li class="content-list-item">
+  <div class="checkbox">  
+    <input type="checkbox" id="draft-list-item-{{ include.n }}">
+    <label for="draft-list-item-{{ include.n }}"></label>
+  </div>
+  {% if page.title == "Team" %}
+    {% include components/display-picture.html %}
+  {% endif %}
+  {% if include.commentNo %}
+    <div class="list-item-comment-counter">
+      <i class="fa fa-comment" aria-hidden="true"></i>
+      {{ include.commentNo }}
+    </div>
+  {% endif %}
+  <span class="list-item-info">
+    <h3><a href="#">{{ include.title }}</a></h3>
+    {% if page.title == "Drafts" %}
+      <p>Last edited {{ include.date }}</p>
+    {% elsif page.title == "Scheduled" %}
+      <p>To be released on {{ include.schedule }}. Last edited {{ include.date }}</p>
+    {% elsif page.title == "Published" %}
+      <p>Released {{ include.schedule }}</p>
+    {% endif %}
+  </span>
+  {% include content-list-item-actions.html %}
+</li>

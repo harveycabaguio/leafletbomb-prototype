@@ -1,0 +1,15 @@
+{% if include.selected %}
+  <a class="sb-mng-list-item--selected" href="{{ include.url }}">
+{% else %}
+  <a class="sb-mng-list-item" href="{{ include.url }}">
+{% endif %}
+  <span class="left">
+    <i class="fa fa-{{ include.icon }}" aria-hidden="true"></i>
+    {{ include.label }}
+  </span>
+  {% if include.badge %}
+    <span class="sb-badge__counter">{{ include.badge }}</span>
+  {% elsif include.badge-urgent %}
+    <span class="sb-badge__counter--urgent">{{ include.badge-urgent }}</span>
+  {% endif %}
+</a>

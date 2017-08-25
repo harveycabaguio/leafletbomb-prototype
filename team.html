@@ -1,0 +1,29 @@
+---
+layout: default
+title: Team
+permalink: /team/
+---
+<div class="app-content">
+  {% include components/sidebar.html %}
+  <div class="content-container">
+    <div class="content">
+      {% include components/content-toolbar.html %}
+      <ul class="content-list">
+        <section>
+          <h4>You</h4>
+          {% include content-list-item.html title="Harvey Cabaguio" section="a" n="1" file="harvey-cabaguio" %}
+        </section>
+        <section>
+          <h4>Requesting Approval</h4>
+          {% include content-list-item.html title="Arron Atchinson" section="b" n="2" %}
+        </section>
+        <section>
+          <h4>Members</h4>
+          {% include content-list-item.html title="Jonathan D'Orleans" section="c" n="3" file="jonathan-dorleans" %}
+          {% include content-list-item.html title="Benjamin Flanagin" section="c" n="4" file="benjamin-flanagin" %}
+          {% include content-list-item.html title="Ryan Sipes" n="5" section="c" file="ryan-sipes" %}
+        </section>
+      </ul>
+    </div>
+  </div>
+</div>

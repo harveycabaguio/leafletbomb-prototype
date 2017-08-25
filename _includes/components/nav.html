@@ -1,0 +1,15 @@
+<nav>
+  <div class="left">
+    <!-- placeholder logo -->
+    {% include inputs/button.html type="__flat--icon-only" url="#" icon="bomb" %}
+    <a class="logo" href="#"><img src="{{ site.baseurl }}assets/system76-logo.png"></a>
+    {% include inputs/button.html type="__flat" url="#" label="Latest News" %}
+    {% include inputs/button.html type="__flat" url="#" label="Influencers" %}
+  </div>
+  <div class="right">
+    {% include inputs/searchbar.html placeholder="Search Leaflet Bomb" %}
+    {% include inputs/button.html type="__flat--icon-only" url="#" icon="bell" %}
+    {% include inputs/button.html type="__flat--icon-only" url="#" icon="user-circle-o" %}
+    {% include components/display-picture.html file="harvey-cabaguio" %}
+  </div>
+</nav>
