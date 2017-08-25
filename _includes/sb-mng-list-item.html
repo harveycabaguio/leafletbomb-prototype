@@ -1,7 +1,7 @@
 {% if include.selected %}
-  <a class="sb-mng-list-item--selected" href="{{ include.url }}">
+  <a class="sb-mng-list-item--selected" href="{{ site.baseurl }}/{{ include.url }}">
 {% else %}
-  <a class="sb-mng-list-item" href="{{ include.url }}">
+  <a class="sb-mng-list-item" href="{{ site.baseurl }}/{{ include.url }}">
 {% endif %}
   <span class="left">
     <i class="fa fa-{{ include.icon }}" aria-hidden="true"></i>
